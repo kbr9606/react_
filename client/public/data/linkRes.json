@@ -1,0 +1,90 @@
+{
+    "isSuccess": true,
+    "code": 1000,
+    "message": "요청에 성공하였습니다.",
+    "result": [
+        {
+            "linkId": 28,
+            "url": "url1.com",
+            "name": "url1 title",
+            "member_name": "aaa",
+            "folder_name": "aaa private folder2",
+            "bookmarkId": null,
+            "uploadDate": "2022-08-03T15:39:46.905334",
+            "lastModifiedDate": null
+        },
+        {
+            "linkId": 29,
+            "url": "url2.com",
+            "name": "url2 title",
+            "member_name": "aaa",
+            "folder_name": "aaa private folder2",
+            "bookmarkId": null,
+            "uploadDate": "2022-08-03T15:41:37.98781",
+            "lastModifiedDate": null
+        }
+    ]
+}		
+			
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

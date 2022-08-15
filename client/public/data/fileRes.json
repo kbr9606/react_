@@ -1,0 +1,92 @@
+{
+    "isSuccess": true,
+    "code": 1000,
+    "message": "요청에 성공하였습니다.",
+    "result": [
+        {
+            "fileId": 25,
+            "filePath": "https://umc-helper.s3.ap-northeast-2.amazonaws.com/files/6006ffd6-28f3-4bac-a7e1-be77173b0652.txt",
+            "originalFileName": "test.txt",
+            "member_name": "aaa",
+            "folder_name": "aaa private folder2",
+            "folderId": 20,
+            "bookmarkId": null,
+            "uploadDate": "2022-08-03T15:17:48.508745"
+        },
+        {
+            "fileId": 26,
+            "filePath": "https://umc-helper.s3.ap-northeast-2.amazonaws.com/files/10aed735-a801-4e50-887c-8686ce1c6b20.txt",
+            "originalFileName": "파이참 아나콘다 가상환경.txt",
+            "member_name": "aaa",
+            "folder_name": "aaa private folder2",
+            "folderId": 20,
+            "bookmarkId": null,
+            "uploadDate": "2022-08-03T15:19:28.168178"
+        }
+    ]
+}		
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			

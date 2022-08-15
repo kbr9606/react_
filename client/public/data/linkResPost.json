@@ -1,0 +1,10 @@
+{
+    "isSuccess": true,
+    "code": 1000,
+    "message": "요청에 성공하였습니다.",
+    "result": {
+        "linkId": 30,
+        "url": "url3.com",
+        "name": "url3 title"
+    }
+}
