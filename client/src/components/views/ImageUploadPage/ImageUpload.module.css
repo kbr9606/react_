@@ -7,22 +7,64 @@
     overflow-y: scroll;
     float: left;
     width: 61%;
-    height: 90% ;
+    height: 100% ;
     background-color: #EEF2F9;
     /* display: flex; */
     /* justify-content: center; */
     /* flex-wrap: wrap; */
-    padding : 30px 20px;
+    padding : 30px 37px;
 }
 
 #contents_wrap {
     height : 100%;
-    margin : 0 4.5%;
     width : auto;
     display: flex;
     flex-direction : column;
     justify-content: flex-start;
 }
+
+#contentsHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerName {
+    font-size: 24px;
+}
+
+#headerName2 {
+    color: #828282;
+}
+
+#headerName3 {
+    font-weight: 700;
+}
+
+
+#headerSort {
+    display: flex;
+    background-color: white;
+    border: 0.75px solid #BDBDBD;
+    border-radius: 50px;
+}
+
+.sort {
+    width: 65px;
+    color: #828282;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sortMemo {
+    height: 100%;
+    color: white;
+    background-color: #2F80ED;
+    border-radius: 26px;
+}
+
+
 
 /* 
 html, body {
@@ -38,8 +80,8 @@ html, body {
 /*콘텐츠 영역*/
 
 .container {
-    width: 740px;
-    margin: 32px auto;
+    width: 100%;
+    margin: 0px auto;
     text-align: center;
   }
   
@@ -57,7 +99,7 @@ html, body {
 .inner {
   width: 100%;
   height: 128px;
-  margin: 64px auto;
+  margin: 40px auto;
   border-radius: 8px;
   font-size: 14px;
   font-weight: 700;
@@ -77,11 +119,11 @@ html, body {
 }
 
 .preview_container {
-    margin-bottom: 16px;
+    margin-bottom: 40px;
     align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    gap: 61px 12px;
+    gap: 61px 46px;
 }
 
 .ImagePreview {

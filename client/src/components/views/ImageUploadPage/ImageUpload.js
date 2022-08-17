@@ -80,12 +80,29 @@ function ImageUpload() {
     
 
     useEffect(() => {
-      axios.get("http://3.37.214.20:8080/folder/:folderId/images")
+      axios.get("http://3.37.214.20:8080/folder/207/images")
       .then((response) => {
-          console.log('123', response)
+          console.log(response)
       })
       .catch((err) => console.log('오류남', err))
 },[]);
+
+
+
+// const onChangeImg = (e) => {
+//   if (e.target.files[0]) {
+//     const img = new FormData();
+//     img.append("file", e.target.files[0]);
+//     axios
+//       .post("http://3.37.214.20:8080/folder/image", img)
+//       .then((res) => {
+//         console.log(res.data);
+//       })
+//       .catch((err) => {
+//         console.error(err);
+//       });
+//   }
+// };
 
     
 
@@ -126,7 +143,7 @@ function ImageUpload() {
         
         await axios({
           method: 'patch',
-          url: 'http://3.37.214.20:8080/folder/image/trash/:imageId/:memberId',
+          url: 'http://3.37.214.20:8080/folder/image/trash/1/1',
           data: formData,
           headers: {
             'Content-Type': 'multipart/form-data',
@@ -165,17 +182,30 @@ function ImageUpload() {
 
   return (
     <div id={style.contents}>
-        <div id={style.contents_wrap}>
-          <div className = {style.container}>
-              <form method="post">
-                  <label className={style.label} ref={uploadBoxRef} htmlFor="ImgInput">
-                      <div className={style.inner}>드래그 또는 클릭하여 업로드</div> 
-                  </label>
-                  <input id='ImgInput' className = {style.ImgInput} ref={inputRef} multiple accept="image/*" type="file" name="chooseFile" onChange={onChangeImg} />
-                  <div className={style.preview_container}>{previewImages}</div>
-              </form>
-          </div>
+      <div id={style.contentsHeader}>
+        <div id={style.headerName}>
+          <span id={style.headerName1}>내 폴더</span>
+          <span id={style.headerName2}> > </span>
+          <span id={style.headerName3}>Portfolio 자료</span>
         </div>
+        <div id={style.headerSort}>
+          <div className={style.sort} id={style.sortLink}>링크</div>
+          <div className={style.sort} id={style.sortImg}>사진</div>
+          <div className={style.sort} id={style.sortFile}>파일</div>
+          <div className={style.sort} id={style.sortMemo}>메모</div>
+        </div>
+      </div>
+      <div id={style.contents_wrap}>
+        <div className = {style.container}>
+            <form method="post">
+                <label className={style.label} ref={uploadBoxRef} htmlFor="ImgInput">
+                    <div className={style.inner}>드래그 또는 클릭하여 업로드</div> 
+                </label>
+                <input id='ImgInput' className = {style.ImgInput} ref={inputRef} multiple accept="image/*" type="file" name="chooseFile" onChange={onChangeImg} />
+                <div className={style.preview_container}>{previewImages}</div>
+            </form>
+        </div>
+      </div>
       </div>
   );
 }

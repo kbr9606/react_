@@ -35,24 +35,21 @@ function MemoUpload() {
 
   return (
         <div id={style.contents}>
+            <div id={style.contentsHeader}>
+                <div id={style.headerName}>
+                  <span id={style.headerName1}>내 폴더</span>
+                  <span id={style.headerName2}> > </span>
+                  <span id={style.headerName3}>Portfolio 자료</span>
+                </div>
+                <div id={style.headerSort}>
+                  <div className={style.sort} id={style.sortLink}>링크</div>
+                  <div className={style.sort} id={style.sortImg}>사진</div>
+                  <div className={style.sort} id={style.sortFile}>파일</div>
+                  <div className={style.sort} id={style.sortMemo}>메모</div>
+                </div>
+            </div>
             <div id={style.contents_wrap}>
-                <div className = {style.container}>
-                    {/* <div className={style.MemoContainer}>
-                        <form method='post'>
-                            <div className={style.TitleInput}>
-                                <input type="text" placeholder="제목" value={titleValue} name="title" onChange={(e) => handleSetTitleValue(e)} className={style.MemoTitle}></input>
-                            </div>
-    
-                            <div className={style.TextInput}>
-                                <textarea type="text" placeholder="메모를 입력하세요..." value={textValue} name="text" onChange={(e) => handleSetTextValue(e)} className={style.MemoText} rows="4"></textarea>
-                            </div>
-    
-                            <div className={style.MemoBtnContainer}>
-                                <input type="button" value="확인" className={style.MemoBtn} onClick={onAddDetailDiv} />
-                            </div>
-                        </form>
-                    </div> */}
-    
+                <div className = {style.container}>    
                     <button className={style.MemoBtn} onClick={onAddDetailDiv}>
                         <img src="/img/img+memo/uploadmemo.png" />
                         <div>

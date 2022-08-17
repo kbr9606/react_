@@ -6,21 +6,61 @@
     overflow-y: scroll;
     float: left;
     width: 61%;
-    height: 90% ;
+    height: 100% ;
     background-color: #EEF2F9;
     /* display: flex; */
     /* justify-content: center; */
     /* flex-wrap: wrap; */
-    padding : 30px 20px;
+    padding : 30px 37px;
 }
 
 #contents_wrap {
     height : 100%;
-    margin : 0 4.5%;
     width : auto;
     display: flex;
     flex-direction : column;
     justify-content: flex-start;
+}
+
+#contentsHeader {
+    display: flex;
+    justify-content: space-between;
+}
+
+#headerName {
+    font-size: 24px;
+}
+
+#headerName2 {
+    color: #828282;
+}
+
+#headerName3 {
+    font-weight: 700;
+}
+
+
+#headerSort {
+    display: flex;
+    background-color: white;
+    border: 0.75px solid #BDBDBD;
+    border-radius: 50px;
+}
+
+.sort {
+    width: 65px;
+    color: #828282;
+    font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#sortMemo {
+    height: 100%;
+    color: white;
+    background-color: #2F80ED;
+    border-radius: 26px;
 }
 
 /* html, body {
@@ -45,15 +85,15 @@
 /*콘텐츠 영역*/
 
 .container {
-    width: 740px;
+    width: 100%;
     margin: 0 auto;
     text-align: center;
     position: relative;
-    padding-top: 64px;
+    padding-top: 40px;
   }
 
 .MemoContainer {
-    width: 740px;
+    width: 100%;
     background-color: white;
     border-radius: 8px;
     border: 3px solid #E0E0E0;
@@ -107,7 +147,7 @@
     align-items: center;
     display: grid;
     grid-template-columns: repeat(4, 2fr);
-    gap: 61px 12px;
+    gap: 61px 46px;
 
     position: relative;
     bottom: 176px;

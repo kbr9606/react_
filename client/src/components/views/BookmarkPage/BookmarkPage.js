@@ -5,11 +5,11 @@ import axios from 'axios';
 function BookmarkPage() {
 
     useEffect(() => {
-        axios.get("http://3.37.214.20:8080/bookmark/:memberId")
+        axios.get("http://3.37.214.20:8080/bookmark/1")
         .then((response) => {
-            console.log('123', response)
+            console.log(response)
         })
-        .catch((err) => console.log('오류남', err))
+        .catch((err) => console.log(err))
   },[]);
 
     return (
